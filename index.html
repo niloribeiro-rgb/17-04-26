@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <label for="fruta">fruta</label>
-    <input type="text" id="fruta">
-    <br>
-    <label for="quantidade">quantidade</label>
-    <input type="text" id="quantidade">
-    <br>
-    <button onclick="cadastrar()">aperte</button>
-    <p id="mostrar"></p>
+    <div class="container">
+        <div id="frutaContainer">
+            <label for="fruta">Fruta</label>
+            <input type="text" id="fruta">
+        </div>
+        <div class="quantNumContainer">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" placeholder="0">
+            <label for="preco">Preço</label>
+            <input type="number" id="preco" placeholder="0">
+        </div>
+        <div id="buttonContainer">
+            <button onclick="cadastrar()">Adicionar</button>
+        </div>
+        <div class="tableContainer">
+            <table id="mostrar"></table>
+        </div>
+    </div>
+
 </body>
+
 </html>
